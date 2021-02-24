@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+    <record model="ir.ui.view" id="school_meeting_wizard_form_view">
+        <field name="name">school.meeting.wizard</field>
+        <field name="model">school.meeting</field>
+        <field name="arch" type="xml">
+            <form string="Wizard">
+                <group>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                <footer>
+                    <button type="object" name="print_report" class="btn btn-primary btn-block">Submit</button>
+                    <button type="cancel" special="cancel" class="btn btn-primary btn-block">Cancel</button>
+                </footer>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <act_window
+        id="launch_session_wizard"
+        name="Pick a date"
+        res_model="school.meeting"
+        view_mode="form"
+        target="new" />
+
+    <menuitem
+        id="school_meeting_menu"
+        name="Meetings"
+        action="launch_session_wizard"
+        parent="school_classroom_menu"
+        sequence="5"/>
+
+    </data>
+</odoo>

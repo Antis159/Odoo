@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <act_window
+        id="school_classroom_action"
+        name="School Classrooms"
+        res_model="school.classroom" />
+
+    <menuitem
+        id="school_classroom_menu"
+        name="School"
+        action="school_classroom_action"
+        parent=""
+        sequence="5" />
+
+<!--    <act_window-->
+<!--        id="school_meetings_wizard_action"-->
+<!--        name="School Wizard"-->
+<!--        res_model="school.meeting" />-->
+
+<!--    <menuitem-->
+<!--        id="school_meetings_wizard_menu"-->
+<!--        name="School Wizard"-->
+<!--        action="school_meetings_wizard_action"-->
+<!--        parent="school_classroom_menu"-->
+<!--        sequence="5" />-->
+
+<!--    <record id="school_meetings_wizard_view" model="ir.ui.view">-->
+<!--        <field name="name">School Wizard View</field>-->
+<!--        <field name="model">school.meetings_wizard</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form>-->
+<!--                <group>-->
+<!--                    <field name="name" />-->
+<!--                    <field name="classroom_name"/>-->
+<!--                </group>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <record id="school_classroom_view_form" model="ir.ui.view">
+        <field name="name">School Classroom Form</field>
+        <field name="model">school.classroom</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="classroom_students" widget="many2many_tags"/>
+                </group>
+                <group>
+                    <field name="classroom_grade"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="school_classroom_view_tree" model="ir.ui.view">
+        <field name="name">School Classroom List</field>
+        <field name="model">school.classroom</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="classroom_grade"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="school_classroom_view_search" model="ir.ui.view">
+        <field name="name">school.classroom.search</field>
+        <field name="model">school.classroom</field>
+        <field name="arch" type="xml">
+            <search string="test">
+                <field name="name"/>
+                <field name="classroom_students"/>
+                <filter string="No Students" name="test"
+                        domain="[('classroom_students','=',False)]"/>
+            </search>
+        </field>
+    </record>
+</data>
+</odoo>

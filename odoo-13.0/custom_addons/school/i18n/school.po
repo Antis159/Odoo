@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: Odoo\n"
+"Language: lt\n"
+
+#. module: school
+#: model:ir.model.fields.selection,name:school.selection__school_classroom__state__available
+msgid "Available"
+msgstr "Galimi"
+
+#. module: school
+#: model:res.groups,name:school.group_billing_administrator
+msgid "Billing Administrator"
+msgstr "Apskaitos atsiskaitymo administratorius"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__still_in_school
+msgid "Class still in school?"
+msgstr "Klasė mokykloje?"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__cover
+msgid "Classroom Picture"
+msgstr "Klasės nuotrauka"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__classroom_grade
+msgid "Classroom grade"
+msgstr "Klasės numeris"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__name
+msgid "Classroom name"
+msgstr "Klasės pavadinimas"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__create_uid
+msgid "Created by"
+msgstr "Sukurta"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__create_date
+msgid "Created on"
+msgstr "Sukurtas"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__description
+msgid "Description"
+msgstr "apibūdinimas"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__display_name
+msgid "Display Name"
+msgstr "Rodomas pavadinimas"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__id
+msgid "ID"
+msgstr "ID"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__notes
+msgid "Internal Notes"
+msgstr "Vidinės pastabos"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom____last_update
+msgid "Last Modified on"
+msgstr "Paskutinį kartą modifikuota"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__date_updated
+msgid "Last Updated"
+msgstr "Paskutinį kartą atnaujinta"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__write_uid
+msgid "Last Updated by"
+msgstr "Paskutinį kartą atnaujino"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__write_date
+msgid "Last Updated on"
+msgstr "Paskutinį kartą atnaujinta"
+
+#. module: school
+#: model:ir.model.fields.selection,name:school.selection__school_classroom__state__lost
+msgid "Lost"
+msgstr "Pamesta"
+
+#. module: school
+#: model:ir.model.fields.selection,name:school.selection__school_classroom__state__draft
+msgid "Not Available"
+msgstr "Nepasiekiamas"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__students
+msgid "Number of Students"
+msgstr "Studentų skaičius"
+
+#. module: school
+#: model:ir.ui.menu,name:school.school_classroom_menu
+msgid "School"
+msgstr "Mokykla"
+
+#. module: school
+#: model:ir.model,name:school.model_school_classroom
+msgid "School Classroom"
+msgstr "Mokyklos klasė"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.school_classroom_action
+msgid "School Classrooms"
+msgstr "Mokyklos klasės"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__short_name
+msgid "Short Title"
+msgstr "Trumpas pavadinimas"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__date_start
+msgid "Start date"
+msgstr "Pradžios data"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__state
+msgid "State"
+msgstr "Valstija"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__classroom_students
+msgid "Students"
+msgstr "Studentai"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_classroom__teacher_rating
+msgid "Teacher Average Rating"
+msgstr "Mokytojo vidutinis įvertinimas"
+
+#. module: school
+#: model:ir.model.fields,help:school.field_school_classroom__students
+msgid "Total classroom student count"
+msgstr "Bendras klasės mokinių skaičius"
+

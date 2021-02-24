@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_billing_administrator" model="res.groups">
+        <field name="name">Billing Administrator</field>
+    </record>
+</odoo>

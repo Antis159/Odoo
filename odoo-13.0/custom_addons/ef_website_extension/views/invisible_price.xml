@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <template id="products_item_2" inherit_id="website_sale.product_price" name="Products Item Price Invisible">
+        <xpath expr="//*[hasclass('oe_price')]" position="attributes">
+            <attribute name="groups">ef_website_extension.group_show_price</attribute>
+            <label > </label>
+        </xpath>
+    </template>
+
+    <template id="products_shop_items" inherit_id="website_sale.products_item" name="Products Items Price Invisible">
+        <xpath expr="//*[hasclass('product_price')]" position="attributes">
+            <attribute name="groups">ef_website_extension.group_show_price</attribute>
+            <label > </label>
+        </xpath>
+    </template>
+
+    <template id="cart_item" inherit_id="website_sale.cart_lines" name="Cart Price Invisible">
+        <xpath expr="//*[hasclass('oe_currency_value')]" position="replace">
+            <label></label>
+        </xpath>
+    </template>
+
+    <template id="cart_item2" inherit_id="website_sale.cart_lines" name="Cart Price Invisible">
+        <xpath expr="//*[hasclass('td-price')]" position="replace">
+            <label></label>
+        </xpath>
+    </template>
+
+
+</odoo>

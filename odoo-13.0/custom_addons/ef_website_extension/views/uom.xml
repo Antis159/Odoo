@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <template id="products_item" inherit_id="website_sale.product_price" name="Products Item Show UOM">
+        <xpath expr="//*[hasclass('oe_price')]" position="after">
+            <label>/</label>
+            <label t-field="product.uom_id" style="white-space: nowrap; font-weight: bold;"/>
+        </xpath>
+    </template>
+
+</odoo>
